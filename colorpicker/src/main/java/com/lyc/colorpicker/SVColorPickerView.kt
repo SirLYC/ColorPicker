@@ -301,13 +301,15 @@ class SVColorPickerView @JvmOverloads @SuppressLint("Recycle") constructor(
     fun setCurrentColor(color: Int) {
         Color.colorToHSV(color, currentColorHSV)
         hue = currentColorHSV[0]
+        updateDrawablePositionByColorHSV(currentColorHSV)
+        invalidate()
     }
 
     fun setCurrentColorHSV(@Size(3) colorHSV: FloatArray) {
-        changeColorAndNotify {
-            System.arraycopy(colorHSV, 0, currentColorHSV, 0, 3)
-            hue = currentColorHSV[0]
-        }
+        System.arraycopy(colorHSV, 0, currentColorHSV, 0, 3)
+        hue = currentColorHSV[0]
+        updateDrawablePositionByColorHSV(currentColorHSV)
+        invalidate()
     }
 
     interface ColorPickerViewListener {
