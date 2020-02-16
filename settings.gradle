@@ -1,0 +1,2 @@
+include ':sample', ':colorpicker'
+rootProject.name='ColorPicker'

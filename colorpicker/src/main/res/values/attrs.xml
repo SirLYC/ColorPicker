@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SVColorPickerView">
+        <attr name="paddingColor" format="color" />
+        <attr name="thumbWidth" format="dimension" />
+        <attr name="thumbHeight" format="dimension" />
+        <attr name="thumbDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="HueBarView">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="thumbWidth" />
+        <attr name="thumbHeight" />
+        <attr name="thumbDrawable" />
+    </declare-styleable>
+</resources>
