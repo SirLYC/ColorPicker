@@ -5,7 +5,8 @@ A simple customer view to choose color.
 
 ## Preview
 
-![preview](imgs/video.gif)
+<img src="imgs/video.gif" width="360px" height="640px"/>
+
 > This view will save state when configuration changed, like activity orientation change.
 
 ## Usage
@@ -26,7 +27,7 @@ allprojects {
 
 ``` groovy
 dependencies {
-        implementation 'com.github.SirLYC:ColorPicker:0.0.1'
+        implementation "com.github.SirLYC:ColorPicker:latest.release"
 }
 ```
 
