@@ -31,3 +31,6 @@ dependencies {
 ```
 
 You can find examples in `sample` module.
+
+## License
+[License.md](./LICENSE.MD)
